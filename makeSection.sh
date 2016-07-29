@@ -1,9 +1,10 @@
 #/bin/sh!
 
 $file
-file='../section.csv'
+file=$1
 no_lines=$(cat $file| wc -l)
-
+mkdir profileData
+touch temp.txt
 for j in $(seq 1 6)
 do
     g.region raster=DTM$j
@@ -38,10 +39,11 @@ do
                 
             if [ $(($a)) -eq 1 ]
             then
-                cp temp.txt $output_file 
+                cp temp.txt profileData/$output_file 
             fi
         done
     else
         echo "Odd number of lines"
     fi 
 done
+rm temp.txt

@@ -1,7 +1,7 @@
 #/bin/sh!
 
 $file
-file='DM1.txt'
+file=$2
 no_lines=$(cat $file| wc -l)
 
 echo $no_lines
@@ -17,7 +17,7 @@ echo $no_lines
         echo "next points"
         elev_val="DTM$i"
         contour_val="contourVec$i"
-        v.in.ascii -z z=3  --overwrite input=survey.txt output=fieldData
+        v.in.ascii -z z=3  --overwrite input=$1 output=fieldData
         v.build map=fieldData
         g.region n=$var2 s=$((var2-1500)) e=$var1 w=$((var1-1000))
         v.surf.rst --overwrite input=fieldData layer=0 elev=$elev_val 
