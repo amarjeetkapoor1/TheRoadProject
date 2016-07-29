@@ -4,7 +4,7 @@
 
 cd ../Path/to/TheRoadProject
 
-python TheRoad.py <inputFlie.csv> <Section> <distance-between-two-sections-lines>
+python TheRoad.py \<inputFile.csv> \<Section> \<distance-between-two-sections-lines>
 
 ##output:
    section.csv
