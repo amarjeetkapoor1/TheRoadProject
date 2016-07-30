@@ -3,6 +3,7 @@
 $file
 file=$1
 no_lines=$(cat $file| wc -l)
+rm temp.txt
 touch temp.txt
 for j in $(seq 1 6)
 do

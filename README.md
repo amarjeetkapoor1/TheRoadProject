@@ -24,6 +24,6 @@ bash makeSection.sh \<List of section points>
    bash ../makeSection.sh section.csv
     
 ###To get graph
-sage plot.sage
+sage plot.sage \< inputFile.csv>
 
 

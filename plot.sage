@@ -1,7 +1,11 @@
 import csv
 
 inputpoints= []
-inputfile = open('input.csv')
+
+if(len(sys.argv)<2):
+    exit
+
+inputfile = open(sys.argv[1])
 pointer = csv.reader(inputfile, delimiter=',')
 parsed = ((float(row[0]), float(row[1]))
             for row in pointer)
