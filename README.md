@@ -8,7 +8,7 @@ python TheRoad.py \<inputFile.csv> \<Section> \<distance-between-two-sections-li
 
 bash contour.sh \<DATA set for generating map> \<File defining region for each map>
 
-bash road.sh \<points to generate profile >
+bash road.sh \<points to generate profile > \<output file name>
 
 bash makeSection.sh \<List of section points>
 
@@ -19,7 +19,7 @@ bash makeSection.sh \<List of section points>
    
    bash ../contour.sh survey.txt DM1.txt
    
-   bash ../road.sh Area.csv
+   bash ../road.sh Area.csv Final.txt
    
    bash ../makeSection.sh section.csv
     
