@@ -19,7 +19,7 @@ v.build map=fieldData
 
 
 #Count numbers of regions to be created
-no_lines=$(cat $f2| wc -l)
+no_lines=$(cat $2| wc -l)
 
 echo $no_lines
 
@@ -28,14 +28,14 @@ echo $no_lines
     do
         
         #getting data from input file describing the region. 
-        data=$(awk "NR>=$i&&NR<=$i" $file)
+        data=$(awk "NR>=$i&&NR<=$i" $2)
         var1=$(echo $data | cut -d',' -f1)
         var2=$(echo $data | cut -d',' -f2)
         var3=$(echo $data | cut -d',' -f3)
         var4=$(echo $data | cut -d',' -f4)
         
         echo "next points"
-        echo "North: " $var1 " South: " $var2  " East: " $var2  " West: " $var2
+        echo "North: " $var1 " South: " $var2  " East: " $var3  " West: " $var4
         
         #name of new raster MAP
         elev_val="DTM$i"
@@ -50,5 +50,3 @@ echo $no_lines
         # Create raster map  
         r.contour --overwrite input=$elev_val output=$contour_val step=.5 cut=0
     done
-
-

@@ -22,7 +22,7 @@ also divide the full map into small maps to increase the speed of execution or
 for many other purposes by providing more than one north, east, south, west
 values for each smaller map.  (You can refer example/DM1.txt)
     * bash contour.sh \<DATA set for generating map> \<File defining region for each map>
-    *  e.g. `bash contour.sh example/grassData.txt example/DM1.txt`
+    *  e.g. `bash contour.sh example/GrassData.txt example/DM1.txt`
 
 2. This script will generate RL points on given polyline (in form of CSV file in format *X,Y*  you can refer to example/road.csv)
     * bash road.sh \<Input file of points to generate profile > \<output file name>
