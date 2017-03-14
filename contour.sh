@@ -43,7 +43,7 @@ echo $no_lines
         contour_val="contourVec$i"
         
         # Create region with resolution in y direction "nsres=1" and x direction "ewres=0.01"
-        g.region n=$var1 s=$var2 e=$var3 w=$var4 nsres=1 ewres=0.01
+        g.region n=$var1 s=$var2 e=$var3 w=$var4 nsres=1 ewres=1
         
         # Create vector map with input as fieldData 
         v.surf.rst --overwrite input=fieldData layer=0 elev=$elev_val 

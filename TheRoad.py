@@ -31,7 +31,7 @@ for i in range(len(points)-1):
     distanceList.append(dis)
 
 
-output=open('lenght.csv', 'wb')
+output=open('length.csv', 'wb')
 writer = csv.writer(output)
 output=open('section.csv', 'wb')
 writer2 = csv.writer(output)

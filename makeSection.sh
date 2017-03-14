@@ -7,7 +7,7 @@ rm -rf profileData
 mkdir profileData
 rm temp.txt
 touch temp.txt
-for j in $(seq 1 6)
+for j in $(seq 1 $2)
 do
     g.region raster=DTM$j
     inc=0
