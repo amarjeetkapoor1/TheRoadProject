@@ -10,7 +10,7 @@ This script will give you set of points *A1, A2 , A3 ...... An.* at particular d
 * ```python TheRoad.py <inputFile.csv> <Section> <distance-between-two-sections-lines>```
 * python TheRoad.py input.csv *P* *D*
 * e.g.
-       ```python TheRoad.py road.csv 10 40```
+       ```python TheRoad.py example/road.csv 10 40```
 
 
 It will output two files: section.csv and and length.csv
